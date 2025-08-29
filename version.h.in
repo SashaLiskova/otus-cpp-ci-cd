@@ -1,4 +1,25 @@
 #pragma once
 
-#cmakedefine PROJECT_VERSION_PATCH @PROJECT_VERSION_PATCH@
+/*
+    this file is template file and cmake configures it, by setting
+   PROJECT_VERSION_PATCH if I will change the value to non cmake defined value
+   like @non@ -> it will be defined, but empty -> #define PROJECT_VERSION_PATCH
 
+   funny moment with comments: if i will write cmakedefine with # in the
+   begginging, and some non cmake stuff, cmake will try to comment it with / *
+   -> witch created for me neste / * and caused mistake, co cmake goes through
+   what is in comments
+*/
+
+/*
+    note: format on save I have adds expta space before clothing @, CTRL +K S ->
+    saves without formatiing, but good to add such thing for formatter (if
+    ossible)
+*/
+
+/*
+    cmakedefine is define from cmake, if i delete project(..) line from cmake,
+    this line will be commented in version.h file
+*/
+
+#cmakedefine PROJECT_VERSION_PATCH @PROJECT_VERSION_PATCH@
