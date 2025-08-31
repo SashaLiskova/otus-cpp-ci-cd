@@ -1,4 +1,7 @@
-This is CI-CD template for other home works
+This is CI-CD template for other home works.
+Install downloaded package: `sudo apt install ./helloworld-0.0.3-Linux.deb` 
+Unistall:                   `sudo apt remove helloworld`
+
 
 
 TODO:
